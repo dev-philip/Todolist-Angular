@@ -1,0 +1,34 @@
+React vs Angular close differences research by Philip
+
+1. React is a JavaScript library for building UI applications. Angular is a framework for building full fledge applications.
+2. To create a new app with Agular you use “ng new appname”
+3. In angular we use ng serve or ng the name that is in the script in package.json
+4. In anguler we create component with command line using the command “ng g c directory/componentname”. Which will create 4 files for you. For example, if we create a component “ng g c component/dashboard”. This will create 4 files for me in the “src/app/component” folder . These files are
+5. dashboard.component.html
+6. dashboard.component.spec.ts
+7. dashboard.component.ts
+8. dashboard..component.css
+   and then it will also add the component in app.module.ts in @NgModule({
+   declarations: [
+   DashboardComponent
+   ]
+   })
+9. If you want to create a service in angular we use "ng g s service/crud". it will create a service files for us in "src/app/service/crud.service.spec.ts" and "src/app/service/crud.service.ts"
+10. If we want to create a class in angular we use "ng g class model/Task". it will create a class files for us in "src/app/model/task.spec.ts" and "src/app/model/task.ts"
+11. to add component in html file we use <app-nameofcomponent></app-nameofcomponent>. For example if the name of the component is dashboard.component.html then to use this component in another file we use <app-dashboard></app-dashboard>
+12. Angular comes with all the paceges you need to build a complete application. All you need to do is to import them in the app.module.ts in the import arrays. for example I want to make use of forms and http. this is how I will import it.
+    import { FormsModule } from '@angular/forms';
+    import { HttpClientModule } from '@angular/common/http';
+13. if we want to get an input from a form we use to "[(ngModel)]" to bind it to a variable or object in the component.ts file
+
+imports: [
+BrowserModule,
+AppRoutingModule,
+FormsModule,
+HttpClientModule
+],
+
+React vs Angular close Similarities research by Philip
+
+1. They both use NPM. For example, npm install -g @angular/cli
+2. They both use same styling css, scss, sass, less
